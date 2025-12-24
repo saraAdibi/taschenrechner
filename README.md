@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Rechner-App – Next.js Clean Architecture
 
-## Getting Started
+Eine moderne Rechner-Anwendung, entwickelt mit **Next.js**, **TypeScript** und **Tailwind CSS**, gestaltet mit einer **sauberen und skalierbaren Architektur**.
 
-First, run the development server:
+Dieses Projekt legt den Fokus auf **Separation of Concerns**, **vorhersehbares State-Management** und **wartbare UI-Patterns**, ähnlich wie in realen Produktionsanwendungen.
 
-```bash
+![Calculator Screenshot](./public/screenshot.png)
+
+---
+
+## Live Demo
+
+👉 **Live auf Vercel:**  
+https://VERCEL-LINK.vercel.app
+
+---
+
+## Funktionen
+
+- Grundlegende Rechenoperationen
+- Prozent- und Vorzeichenwechsel-Unterstützung
+- Zentralisiertes State-Management mit `useReducer`
+- Saubere Trennung von UI und Geschäftslogik
+- Wiederverwendbare und testbare Komponenten
+- Responsives modernes UI mit Tailwind CSS
+
+---
+
+##  Architekturübersicht
+
+Dieses Projekt folgt dem **Container / Presentational Pattern**:
+
+
+### Wichtige Prinzipien:
+
+- Dumb & Smart Components
+- Reducer-basiertes State-Management
+- Feature-basierte Ordnerstruktur
+- Pure Utility-Funktionen für Berechnungen
+
+---
+
+## 🛠 Tech Stack
+
+- **Next.js (App Router)**
+- **React**
+- **TypeScript**
+- **Tailwind CSS**
+- **Vercel (Deployment)**
+
+---
+
+
+---
+
+## State Management
+
+Der State wird über `useReducer` und React Context verwaltet:
+
+- Alle Rechner-Logik befindet sich im Reducer
+- UI-Komponenten enthalten keine Geschäftslogik
+- Utilities sind isoliert und wiederverwendbar
+
+---
+
+## Was ich in diesem Projekt gelernt/praktiziert habe
+
+- Aufbau einer skalierbaren React-Architektur
+- Trennung von UI und Geschäftslogik
+- Vorhersehbare Verwaltung komplexer UI-States
+- Wartbaren und lesbaren Code schreiben
+
+---
+
+## Lokale Installation
+
+git clone https://github.com/saraAdibi/taschenrechner.git
+cd taschenrechner
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
