@@ -1,8 +1,8 @@
-# Rechner-App – Next.js Clean Architecture
+# Rechner-App – Next.js
 
-Eine moderne Rechner-Anwendung, entwickelt mit **Next.js**, **TypeScript** und **Tailwind CSS**, gestaltet mit einer **sauberen und skalierbaren Architektur**.
+Eine moderne Rechner-App, entwickelt mit **Next.js**, **TypeScript** und **Tailwind CSS**, die auf **sauberen Architekturprinzipien** basiert.
 
-Dieses Projekt legt den Fokus auf **Separation of Concerns**, **vorhersehbares State-Management** und **wartbare UI-Patterns**, ähnlich wie in realen Produktionsanwendungen.
+Die App legt Wert auf **klare Trennung von Logik und UI**, **vorhersehbares State-Management** und **wiederverwendbare Komponenten**, wie sie in professionellen Projekten üblich sind.
 
 ![Calculator Screenshot](./public/screenshot.png)
 
@@ -10,72 +10,67 @@ Dieses Projekt legt den Fokus auf **Separation of Concerns**, **vorhersehbares S
 
 ## Live Demo
 
-👉 **Live auf Vercel:**  
-https://VERCEL-LINK.vercel.app
+**Live auf Vercel:**  
+https://taschenrechner-eta.vercel.app/
 
 ---
 
 ## Funktionen
 
-- Grundlegende Rechenoperationen
-- Prozent- und Vorzeichenwechsel-Unterstützung
-- Zentralisiertes State-Management mit `useReducer`
-- Saubere Trennung von UI und Geschäftslogik
-- Wiederverwendbare und testbare Komponenten
-- Responsives modernes UI mit Tailwind CSS
+- Grundrechenarten: Addition, Subtraktion, Multiplikation, Division  
+- Prozentrechnung und Vorzeichenwechsel  
+- State-Management mit `useReducer` und React Context  
+- Saubere Trennung von Logik und Darstellung  
+- Wiederverwendbare und leicht testbare Komponenten  
+- Modernes, responsives UI mit Tailwind CSS
 
 ---
 
-##  Architekturübersicht
+## Architektur & Prinzipien
 
-Dieses Projekt folgt dem **Container / Presentational Pattern**:
+Die App folgt dem **Container / Presentational Pattern** und enthält:  
 
-
-### Wichtige Prinzipien:
-
-- Dumb & Smart Components
-- Reducer-basiertes State-Management
-- Feature-basierte Ordnerstruktur
-- Pure Utility-Funktionen für Berechnungen
+- **Dumb & Smart Components** für klare Zuständigkeiten  
+- **Reducer-basiertes State-Management** für vorhersehbare Logik  
+- **Feature-basierte Ordnerstruktur**  
+- **Pure Utility-Funktionen** für Berechnungen
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
-- **Next.js (App Router)**
-- **React**
-- **TypeScript**
-- **Tailwind CSS**
-- **Vercel (Deployment)**
-
----
-
+- **Next.js (App Router)**  
+- **React**  
+- **TypeScript**  
+- **Tailwind CSS**  
+- **Vercel** für Deployment
 
 ---
 
 ## State Management
 
-Der State wird über `useReducer` und React Context verwaltet:
+Der gesamte State wird über `useReducer` und React Context verwaltet:  
 
-- Alle Rechner-Logik befindet sich im Reducer
-- UI-Komponenten enthalten keine Geschäftslogik
+- Alle Berechnungslogiken befinden sich im Reducer  
+- UI-Komponenten enthalten keine Geschäftslogik  
 - Utilities sind isoliert und wiederverwendbar
 
 ---
 
-## Was ich in diesem Projekt gelernt/praktiziert habe
+## Persönliche Learnings
 
-- Aufbau einer skalierbaren React-Architektur
-- Trennung von UI und Geschäftslogik
-- Vorhersehbare Verwaltung komplexer UI-States
-- Wartbaren und lesbaren Code schreiben
+- Skalierbare React-Architektur aufbauen  
+- Trennung von UI und Geschäftslogik  
+- Komplexe UI-States vorhersehbar verwalten  
+- Lesbaren und wartbaren Code schreiben
 
 ---
 
 ## Lokale Installation
 
+```bash
 git clone https://github.com/saraAdibi/taschenrechner.git
 cd taschenrechner
 npm install
 npm run dev
-
+```
